@@ -10,4 +10,3 @@ const assertArraysEqual = function(arrayList1, arrayList2) {
 };
 
 module.exports = assertArraysEqual;
-
