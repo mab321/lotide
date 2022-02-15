@@ -1,18 +1,24 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-const newWords = tail(words); // no need to capture the return value since we are not checking it
-const emptyWords = tail([]);
+describe("#tail", () => {
+  const words = ["Yo Yo", "Lighthouse", "Labs"];
+  it("returns empty array when passed an empty aray", () => {
 
-//Test case 1 original array length unmodified and first element is still the same
-assertEqual(words.length, 3); // original array should still have 3 elements!
-assertEqual(words[0], "Yo Yo");
+    assert.deepEqual(tail([]),[]);
 
-// test case 2 check return tail array length and elements
-assertEqual(newWords.length,2); // returned array is 2 elements in length
-assertEqual(newWords[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(newWords[1], "Labs"); // ensure second element is "Labs"
+  });
 
-// test case 3 check empty array returned when empty array is passed to tail
-assertEqual(emptyWords.length,0); // empty array returns empty array length is 0
+  it("returns tail array starting at index 1 when passed three element array", () => {
+
+    assert.deepEqual(tail(words),["Lighthouse","Labs"]);
+
+  });
+  
+  it("returns array with length 2 when pass an array with length 3", () => {
+    let newWords = tail(words);
+    assert.strictEqual(newWords.length,2);
+
+  });
+
+});
