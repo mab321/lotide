@@ -39,7 +39,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+/*
 letterPositions("lighthouse test");
 
 assertArraysEqual(letterPositions("lighthouse").h,[3,5]);
 assertArraysEqual(letterPositions("hello").e,[1]);
+*/
+module.exports = letterPositions;

@@ -30,9 +30,11 @@ const assertArraysEqual = function(arrayList1, arrayList2) {
 
 
 
-
+/*
 const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, word => word[0]);
 const results2 = map (words,words => words[1])
 assertArraysEqual(results1,['g','c','t','m','t']);
 assertArraysEqual(results2,['r','o','o','a','o']);
+*/
+module.exports = map;
