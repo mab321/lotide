@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mab321/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A clone of the lodash javascript library, created for practice only. ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/mab321/lotide.git"
   },
-  "author": "",
+  "author": "mab321",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mab321/lotide/issues"
